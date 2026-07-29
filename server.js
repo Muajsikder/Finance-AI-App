@@ -9,12 +9,12 @@ const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 const path = require("path");
 const portfolioRoutes =
-require("./routes/portfolio");
+require("./routes/Portfolio");
 
 // Import User model
 const User = require("./models/User");
 const aiRoutes =
-require("./routes/ai");
+require("./routes/AI");
 
 
 // Load environment variables
