@@ -1,0 +1,520 @@
+/* ==================================
+   FinanceAI Global Styles
+   ================================== */
+
+
+/* Reset browser default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main page style */
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color: #333;
+
+    min-height: 100vh;
+
+}
+
+
+/* ==================================
+   Navigation Bar
+   ================================== */
+
+nav {
+
+    background-color: #1E3A5F;
+
+    color: white;
+
+    padding: 18px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+/* FinanceAI logo */
+
+nav h1 {
+
+    font-size: 28px;
+
+    color: white;
+
+}
+
+
+/* Navigation list */
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+/* Navigation links */
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+}
+
+
+/* Hover effect */
+
+nav a:hover {
+
+    color: #4CAF50;
+
+}
+
+
+/* ==================================
+   Welcome Section
+   ================================== */
+
+.welcome {
+
+    text-align: center;
+
+    margin: 40px auto;
+
+}
+
+
+.welcome h2 {
+
+    color: #1E3A5F;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.welcome p {
+
+    color: #666;
+
+    font-size: 17px;
+
+}
+
+
+
+/* ==================================
+   Login and Signup Forms
+   ================================== */
+
+
+form {
+
+    background-color: white;
+
+    width: 380px;
+
+    margin: 30px auto;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+label {
+
+    font-weight: bold;
+
+    display: block;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+}
+
+
+input:focus {
+
+    outline: none;
+
+    border-color: #1E3A5F;
+
+}
+
+
+
+/* Buttons */
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    background-color: #2E8B57;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+    background-color: #246b45;
+
+}
+
+
+
+/* Signup links */
+
+.signup {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+}
+
+
+.signup a {
+
+    color: #1E3A5F;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+
+.signup a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* ==================================
+   Dashboard Cards
+   ================================== */
+
+
+.cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 30px auto;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.card {
+
+    background-color: white;
+
+    width: 250px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+
+}
+
+
+
+.card h3 {
+
+    color: #1E3A5F;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.card p {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #2E8B57;
+
+}
+
+
+
+/* ==================================
+   Quick Actions
+   ================================== */
+
+
+.actions {
+
+    text-align: center;
+
+    margin: 40px;
+
+}
+
+
+
+.actions button {
+
+    width: 200px;
+
+    margin: 10px;
+
+}
+
+
+
+/* ==================================
+   Tables
+   ================================== */
+
+
+.transactions {
+
+    width: 85%;
+
+    margin: 40px auto;
+
+}
+
+
+
+.transactions h2 {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: #1E3A5F;
+
+}
+
+
+
+table {
+
+    width: 100%;
+
+    background-color: white;
+
+    border-collapse: collapse;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+
+}
+
+
+
+th {
+
+    background-color: #1E3A5F;
+
+    color: white;
+
+    padding: 15px;
+
+}
+
+
+
+td {
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+
+tr:hover {
+
+    background-color: #f1f5f9;
+
+}
+
+
+
+/* ==================================
+   AI Assistant
+   ================================== */
+
+
+.ai-section {
+
+    width: 70%;
+
+    margin: 40px auto;
+
+}
+
+
+
+.ai-section form {
+
+    width: 100%;
+
+}
+
+
+
+.ai-section .card {
+
+    width: 100%;
+
+    margin-top: 30px;
+
+}
+
+
+
+/* ==================================
+   Footer
+   ================================== */
+
+
+footer {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding: 20px;
+
+    color: gray;
+
+}
+
+
+
+/* ==================================
+   Mobile Responsive Design
+   ================================== */
+
+
+@media(max-width:700px){
+
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    nav ul {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    form {
+
+        width: 90%;
+
+    }
+
+
+    .cards {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .transactions {
+
+        width: 95%;
+
+        overflow-x: auto;
+
+    }
+
+
+}

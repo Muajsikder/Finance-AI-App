@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FinanceAI - Transactions</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js" defer></script>
+    <script src="transactions.js" defer></script>
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav>
+
+        <h1>FinanceAI</h1>
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+            <li><a href="ai.html">AI Assistant</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <div class="welcome">
+
+        <h2>Transaction History</h2>
+
+        <p>
+            Review your income and expenses.
+        </p>
+
+    </div>
+
+
+
+    <!-- Add Transaction Form -->
+<div class="transactions">
+
+    <h2>Add Transaction</h2>
+
+
+    <form id="transactionForm">
+
+        <label for="category">
+            Category
+        </label>
+
+        <input
+            type="text"
+            id="category"
+            placeholder="Example: Food"
+            required>
+
+
+        <br><br>
+
+
+        <label for="description">
+            Description
+        </label>
+
+        <input
+            type="text"
+            id="description"
+            placeholder="Example: Grocery Store"
+            required>
+
+
+        <br><br>
+
+
+        <label for="amount">
+            Amount
+        </label>
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Example: 50"
+            required>
+
+
+        <button type="submit">
+            Add Transaction
+        </button>
+
+
+    </form>
+
+
+</div>
+
+
+
+
+
+<!-- Transaction Table -->
+<div class="transactions">
+
+
+    <h2>My Transactions</h2>
+
+
+    <table>
+
+
+        <thead>
+
+            <tr>
+
+                <th>Date</th>
+
+                <th>Category</th>
+
+                <th>Description</th>
+
+                <th>Amount</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+
+
+        <tbody id="transactionList">
+
+            <!-- MongoDB transactions appear here -->
+
+        </tbody>
+
+
+        </table>
+
+
+    </div>
+
+
+
+    <footer>
+
+        <p>&copy; 2026 Muaj Sikder | FinanceAI</p>
+
+    </footer>
+
+
+</body>
+
+</html>

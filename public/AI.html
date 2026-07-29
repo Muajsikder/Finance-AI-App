@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>FinanceAI - Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="auth.js" defer></script>
+    <script src="ai.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav>
+
+        <h1>FinanceAI</h1>
+
+
+        <ul>
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+            <li><a href="ai.html">AI Assistant</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <div class="welcome">
+
+        <h2>Finance AI Assistant</h2>
+
+        <p>
+            Ask questions about budgeting, investing, and financial concepts.
+        </p>
+
+    </div>
+
+
+
+    <div class="ai-section">
+
+
+        <form>
+
+
+            <label for="question">
+                Your Question
+            </label>
+
+
+            <input
+                type="text"
+                id="question"
+                placeholder="Example: What is compound interest?">
+
+
+            <button type="submit">
+                Ask AI
+            </button>
+
+
+        </form>
+
+
+
+    <div class="card">
+
+         <h3>AI Response</h3>
+
+        <p id="response">
+
+        Your AI generated financial explanation will appear here.
+
+        </p>
+
+    </div>
+
+
+    <footer>
+
+        <p>&copy; 2026 Muaj Sikder | FinanceAI</p>
+
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        FinanceAI - Portfolio
+    </title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Checks login token -->
+    <script src="auth.js" defer></script>
+
+
+    <!-- Portfolio JavaScript -->
+    <script src="portfolio.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+
+    <!-- Navigation -->
+    <nav>
+
+        <h1>
+            FinanceAI
+        </h1>
+
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+
+            <li>
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+            </li>
+
+
+            <li>
+                <a href="transactions.html">
+                    Transactions
+                </a>
+            </li>
+
+
+            <li>
+                <a href="ai.html">
+                    AI Assistant
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#" id="logout">
+                    Logout
+                </a>
+            </li>
+
+
+        </ul>
+
+    </nav>
+
+
+
+
+
+    <!-- Page Header -->
+
+    <div class="welcome">
+
+
+        <h2>
+            Your Portfolio
+        </h2>
+
+
+        <p>
+            Track your investments and financial growth.
+        </p>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Portfolio Summary -->
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <h3>
+                Total Value
+            </h3>
+
+
+            <p id="totalValue">
+                $0
+            </p>
+
+
+        </div>
+
+
+
+
+        <div class="card">
+
+            <h3>
+                Total Gain
+            </h3>
+
+
+            <p id="totalGain">
+                $0
+            </p>
+
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+            <h3>
+                Investments
+            </h3>
+
+
+            <p id="totalAssets">
+                0 Assets
+            </p>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Add Investment Form -->
+
+    <div class="transactions">
+
+
+        <h2>
+            Add Investment
+        </h2>
+
+
+
+        <form id="portfolioForm">
+
+
+            <label for="asset">
+                Asset
+            </label>
+
+
+            <input
+
+                type="text"
+
+                id="asset"
+
+                placeholder="Example: AAPL"
+
+                required>
+
+
+
+            <br><br>
+
+
+
+
+            <label for="shares">
+                Shares
+            </label>
+
+
+            <input
+
+                type="number"
+
+                id="shares"
+
+                placeholder="Example: 10"
+
+                required>
+
+
+
+
+            <br><br>
+
+
+
+
+
+            <label for="price">
+                Current Price
+            </label>
+
+
+            <input
+
+                type="number"
+
+                id="price"
+
+                placeholder="Example: 215"
+
+                required>
+
+
+
+
+
+            <br><br>
+
+
+
+
+
+            <label for="purchasePrice">
+                Purchase Price
+            </label>
+
+
+            <input
+
+                type="number"
+
+                id="purchasePrice"
+
+                placeholder="Example: 180"
+
+                required>
+
+
+
+
+
+            <br><br>
+
+
+
+
+            <button type="submit">
+
+                Add Investment
+
+            </button>
+
+
+
+
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Investment Table -->
+
+
+    <div class="transactions">
+
+
+        <h2>
+            My Investments
+        </h2>
+
+
+
+
+        <table>
+
+
+            <thead>
+
+
+                <tr>
+
+
+                    <th>
+                        Asset
+                    </th>
+
+
+                    <th>
+                        Shares
+                    </th>
+
+
+                    <th>
+                        Price
+                    </th>
+
+
+                    <th>
+                        Total
+                    </th>
+
+
+                    <th>
+                        Action
+                    </th>
+
+
+
+                </tr>
+
+
+            </thead>
+
+
+
+
+
+            <tbody id="portfolioList">
+
+                <!-- MongoDB data appears here -->
+
+
+            </tbody>
+
+
+
+
+
+        </table>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+
+    <footer>
+
+
+        <p>
+            &copy; 2026 Muaj Sikder | FinanceAI
+        </p>
+
+
+    </footer>
+
+
+
+
+
+</body>
+
+
+</html>
